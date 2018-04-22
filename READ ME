@@ -1,0 +1,37 @@
+References:
+  Heroku NodeJS help site: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+
+Heroku Login Credentials:
+  email: talocator@gmail.com
+  password: abc123!!!
+
+Commands:
+  Login:
+    heroku login
+
+  Clone repo:
+    heroku git:clone -a taca-locator
+    cd taca-locator
+
+  Deploy changes:
+    git add .
+    git commit -m "descriptive message of changes you made"
+    git push heroku master
+
+File breakdown:
+  > No need to touch app.json, package.json, Procfile, test.js, /view/partials/header.ejs
+
+  > In public/stylesheets/ there is one stylesheet called main.css. That was the one originally
+    titled login.css.
+
+  > /pages/ contains each page on our website. Note the .ejs extension. Writing the HTML should be
+    no different than the front end team has been doing, just save them as .ejs instead.
+
+  > When adding a new page to the website, add it to index.js. Login and Signup are already in there;
+    note the format:
+        .get('/signup', (req, res) => res.render('pages/signup'))
+
+          > /signup is what how page will be referenced.
+            E.G. in the login html code, the signup page is now referenced like this: <a href="/signup">Sign up</a>
+
+          > pages/signup is the name and location of each file. Do not include '.ejs'
