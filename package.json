@@ -1,0 +1,28 @@
+{
+  "name": "softwaredevexecutable",
+  "version": "1.0.0",
+  "description": "A test for the program",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "request": "^2.85.0",
+    "tape": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zoolouie/SoftwareDevExecutable.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "z",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zoolouie/SoftwareDevExecutable/issues"
+  },
+  "homepage": "https://github.com/Zoolouie/SoftwareDevExecutable#readme"
+}
